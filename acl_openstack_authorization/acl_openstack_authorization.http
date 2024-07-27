@@ -1,0 +1,6 @@
+@acl_openstack_authorization_HostAddress = http://localhost:5039
+
+GET {{acl_openstack_authorization_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

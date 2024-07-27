@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Ybcu+TKK1UEmQEoZLLTlKwLjrMYib/ZrDlTVA7oJuKU=",
+  "Source": "acl_openstack_authorization",
+  "BasePath": "_content/acl_openstack_authorization",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

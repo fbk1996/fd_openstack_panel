@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\acl_openstack_authorization.props" />
+</Project>

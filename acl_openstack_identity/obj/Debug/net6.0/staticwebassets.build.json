@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bthNiDzo8sdLrePejVSDvvCfQZFBpiIARBl1+Tx2cOk=",
+  "Source": "acl_openstack_identity",
+  "BasePath": "_content/acl_openstack_identity",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

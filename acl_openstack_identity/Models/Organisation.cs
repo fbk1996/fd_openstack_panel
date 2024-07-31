@@ -11,7 +11,11 @@ public partial class Organisation
 
     public string OpenstackProjectId { get; set; } = null!;
 
+    public string? GroupId { get; set; }
+
     public virtual ICollection<OrganizationsUser> OrganizationsUsers { get; set; } = new List<OrganizationsUser>();
+
+    public virtual ICollection<Project> Projects { get; set; } = new List<Project>();
 
     public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
 }

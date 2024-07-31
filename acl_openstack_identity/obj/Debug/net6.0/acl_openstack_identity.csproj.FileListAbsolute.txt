@@ -82,3 +82,4 @@ C:\visual projects\Asseco\Openstack\acl_openstack_identity\acl_openstack_identit
 C:\visual projects\Asseco\Openstack\acl_openstack_identity\acl_openstack_identity\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\visual projects\Asseco\Openstack\acl_openstack_identity\acl_openstack_identity\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\visual projects\Asseco\Openstack\acl_openstack_identity\acl_openstack_identity\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\visual projects\Asseco\Openstack\acl_openstack_identity\acl_openstack_identity\obj\Debug\net6.0\acl_openstack_identity.sourcelink.json

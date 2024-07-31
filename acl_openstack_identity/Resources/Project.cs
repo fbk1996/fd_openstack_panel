@@ -55,6 +55,8 @@ namespace acl_openstack_identity.Resources
                 // Serialize the payload to JSON
                 var content = new StringContent(JObject.FromObject(projectPayload).ToString(), Encoding.UTF8, "application/json");
 
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 // Add the authorization token to the request headers
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
 
@@ -64,7 +66,7 @@ namespace acl_openstack_identity.Resources
                 // Handle the response
                 if (!response.IsSuccessStatusCode)
                 {
-                    return new OpenStackProject { Name = "error" };
+                    return new OpenStackProject { Name = "error " };
                 }
 
                 // Parse the response content
@@ -73,7 +75,7 @@ namespace acl_openstack_identity.Resources
                 var project = projectResponse.ToObject<OpenStackProject>();
 
                 // Return the created project or an error object if parsing failed
-                return project ?? new OpenStackProject { Name = "error" };
+                return project ?? new OpenStackProject { Name = "error project" };
             }
             catch (Exception ex)
             {
@@ -106,6 +108,8 @@ namespace acl_openstack_identity.Resources
                 // Serialize the payload to JSON
                 var content = new StringContent(JObject.FromObject(requestBody).ToString(), Encoding.UTF8, "application/json");
 
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 // Add the authorization token to the request headers
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
 
@@ -135,6 +139,8 @@ namespace acl_openstack_identity.Resources
 
             try
             {
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 // Add the authorization token to the request headers
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
 

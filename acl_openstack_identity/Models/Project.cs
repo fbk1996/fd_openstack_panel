@@ -21,7 +21,11 @@ public partial class Project
 
     public string? Metadata { get; set; }
 
+    public long OrganisationId { get; set; }
+
     public virtual ICollection<Project> InverseParent { get; set; } = new List<Project>();
+
+    public virtual Organisation Organisation { get; set; } = null!;
 
     public virtual Project Parent { get; set; } = null!;
 

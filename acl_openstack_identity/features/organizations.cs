@@ -34,10 +34,10 @@ namespace acl_openstack_identity.features
             try
             {
                 var token = await _client.Authenticate();
-
                 acl_openstack_identity.Resources.Project projectController = new acl_openstack_identity.Resources.Project(token.identityUrl, _httpClient);
-
-
+                acl_openstack_identity.Resources.Group groupController = new acl_openstack_identity.Resources.Group(token.identityUrl, _httpClient);
+                acl_openstack_identity.Resources.Role roleController = new acl_openstack_identity.Resources.Role(_httpClient, token.identityUrl);
+                acl_openstack_identity.Resources.inheritRole inheritRoleController = new acl_openstack_identity.Resources.inheritRole(_httpClient, token.identityUrl);
                 var project = await projectController.CreateProject(token.token, new ReourcesRequestsObjects.ProjectRequestOb
                 {
                     name = organization.name,
@@ -51,10 +51,45 @@ namespace acl_openstack_identity.features
                 if (project.Name == "error")
                     return new AddOrganizationObResult { result = "error" };
 
+                //create organization group
+                var organizationGroup = await groupController.AddGroup(token.token, new ReourcesRequestsObjects.GroupRequest.AddGroupRequest
+                {
+                    name = $"{organization.name}-users",
+                    description = $"{organization.name} group members",
+                    domainId = _configuration["OpenStack:Domain"]
+                });
+
+                if (organizationGroup.name.Contains("error"))
+                {
+
+                    await projectController.DeleteProject(token.token, project.Id);
+
+                    return new AddOrganizationObResult { result = organizationGroup.name };
+                }
+
+                var assignRoleToMain = await roleController.AssignRoleToGroup(token.token, project.Id, organizationGroup.id, "11227907f18940609771d43e783eb494");
+
+                if (assignRoleToMain == "error")
+                {
+                    await groupController.DeleteGroup(token.token, organizationGroup.id);
+                    await projectController.DeleteProject(token.token, project.Id);
+                    return new AddOrganizationObResult { result = "error" };
+                }
+
+                var assigninheritRole = await inheritRoleController.AssignInheritRoleToGroupInProject(token.token, project.Id, organizationGroup.id, "11227907f18940609771d43e783eb494");
+
+                if (assigninheritRole == "error")
+                {
+                    await groupController.DeleteGroup(token.token, organizationGroup.id);
+                    await projectController.DeleteProject(token.token, project.Id);
+                    return new AddOrganizationObResult { result = "error" };
+                }
+
                 var newOrganization = _context.Organisations.Add(new Models.Organisation
                 {
                     Name = organization.name, // Ensure proper type conversion if necessary
-                    OpenstackProjectId = project.Id
+                    OpenstackProjectId = project.Id,
+                    GroupId = organizationGroup.id
                 });
 
                 await _context.SaveChangesAsync();

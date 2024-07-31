@@ -31,8 +31,7 @@ public partial class assecoOpenstackContext : DbContext
     public virtual DbSet<UsersRole> UsersRoles { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=213.222.222.111;Database=acl_openstack;Username=postgres;Password=b6T22sfQyMkUdHSSuktr;");
+        => optionsBuilder.UseNpgsql("Name=ConnectionStrings:AssecoOpenstackDatabase");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -43,6 +42,9 @@ public partial class assecoOpenstackContext : DbContext
             entity.ToTable("organisations");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.GroupId)
+                .HasMaxLength(40)
+                .HasColumnName("group_id");
             entity.Property(e => e.Name)
                 .HasMaxLength(150)
                 .HasColumnName("name");
@@ -97,12 +99,20 @@ public partial class assecoOpenstackContext : DbContext
             entity.Property(e => e.OpenstackProjectId)
                 .HasMaxLength(36)
                 .HasColumnName("openstack_project_id");
+            entity.Property(e => e.OrganisationId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("organisation_id");
             entity.Property(e => e.ParentId)
                 .ValueGeneratedOnAdd()
                 .HasColumnName("parent_id");
             entity.Property(e => e.Status)
                 .HasMaxLength(50)
                 .HasColumnName("status");
+
+            entity.HasOne(d => d.Organisation).WithMany(p => p.Projects)
+                .HasForeignKey(d => d.OrganisationId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("projects_organisations_id_fk");
 
             entity.HasOne(d => d.Parent).WithMany(p => p.InverseParent)
                 .HasForeignKey(d => d.ParentId)

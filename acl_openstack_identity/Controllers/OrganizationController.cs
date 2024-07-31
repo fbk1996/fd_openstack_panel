@@ -48,7 +48,7 @@ namespace acl_openstack_identity.Controllers
             catch (NpgsqlException ex)
             {
                 Logger.SendException("acl_openstack", "OrganizationController", "CreateOrganization", ex);
-                return StatusCode(500, new { result = "error" });
+                return StatusCode(500, new { result = $"error {ex}" });
             }
         }
     }

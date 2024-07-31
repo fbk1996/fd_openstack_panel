@@ -32,6 +32,8 @@
         {
             try
             {
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 // Add the authentication token to the request headers
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
 

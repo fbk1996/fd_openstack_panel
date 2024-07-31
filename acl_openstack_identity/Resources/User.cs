@@ -59,7 +59,8 @@
 
                 // Serialize the payload to JSON
                 var content = new StringContent(JObject.FromObject(addUserPayload).ToString(), Encoding.UTF8, "application/json");
-
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 // Add the authorization token to the request headers
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
 
@@ -116,7 +117,8 @@
 
                 // Serialize the payload to JSON
                 var content = new StringContent(JObject.FromObject(EditUserPayload).ToString(), Encoding.UTF8, "application/json");
-
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 // Add the authorization token to the request headers
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
 
@@ -151,6 +153,8 @@
 
             try
             {
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 // Add the authorization token to the request headers
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
 

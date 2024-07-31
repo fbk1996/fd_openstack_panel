@@ -54,13 +54,19 @@
                 };
 
                 var content = new StringContent(JObject.FromObject(groupPayload).ToString(), Encoding.UTF8, "application/json");
-
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
                 var response = await _httpClient.PostAsync($"{_apiUrl}/v3/groups", content);
+
+                if (!response.IsSuccessStatusCode)
+                    return new OpenstackGroup { name = $"error {response.StatusCode}" };
 
                 var responseContent = await response.Content.ReadAsStringAsync();
                 var groupResponse = JObject.Parse(responseContent)["group"];
                 var group = groupResponse.ToObject<OpenstackGroup>();
+
+                
 
                 return group ?? new OpenstackGroup { name = "error" };
             }
@@ -99,7 +105,8 @@
                 };
 
                 var content = new StringContent(JObject.FromObject(groupPayload).ToString(), Encoding.UTF8, "application/json");
-
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
                 var response = await _httpClient.PatchAsync($"{_apiUrl}/v3/groups/{requestOb.id}", content);
 
@@ -129,6 +136,8 @@
 
             try
             {
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
                 var response = await _httpClient.PutAsync($"{_apiUrl}/v3/groups/{groupId}/users/{userId}", null);
 
@@ -158,6 +167,8 @@
 
             try
             {
+                if (_httpClient.DefaultRequestHeaders.Contains("X-Auth-Token"))
+                    _httpClient.DefaultRequestHeaders.Remove("X-Auth-Token");
                 _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", token);
                 var response = await _httpClient.DeleteAsync($"{_apiUrl}/v3/groups/{groupId}/users/{userId}");
 

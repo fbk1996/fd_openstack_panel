@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_authorization\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BACF75B8-3C14-4324-A40C-859D62796879}|acl_openstack_authorization\\acl_openstack_authorization.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BACF75B8-3C14-4324-A40C-859D62796879}|acl_openstack_authorization\\acl_openstack_authorization.csproj|solutionrelative:acl_openstack_authorization\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BACF75B8-3C14-4324-A40C-859D62796879}|acl_openstack_authorization\\acl_openstack_authorization.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BACF75B8-3C14-4324-A40C-859D62796879}|acl_openstack_authorization\\acl_openstack_authorization.csproj|solutionrelative:acl_openstack_authorization\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACF75B8-3C14-4324-A40C-859D62796879}|acl_openstack_authorization\\acl_openstack_authorization.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BACF75B8-3C14-4324-A40C-859D62796879}|acl_openstack_authorization\\acl_openstack_authorization.csproj|solutionrelative:acl_openstack_authorization\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BACF75B8-3C14-4324-A40C-859D62796879}|acl_openstack_authorization\\acl_openstack_authorization.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_authorization\\acl_openstack_authorization\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,26 +86,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.Development.json",
               "RelativeDocumentMoniker": "acl_openstack_authorization\\appsettings.Development.json",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.Development.json",
               "RelativeToolTip": "acl_openstack_authorization\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAADAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-27T12:43:27.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.json",
               "RelativeDocumentMoniker": "acl_openstack_authorization\\appsettings.json",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.json",
               "RelativeToolTip": "acl_openstack_authorization\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-27T12:40:26.541Z",
               "EditorCaption": ""

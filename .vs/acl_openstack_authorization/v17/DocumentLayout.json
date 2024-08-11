@@ -58,8 +58,7 @@
               "RelativeToolTip": "acl_openstack_authorization\\Controllers\\AuthenticationController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T13:24:34.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T13:24:34.014Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "acl_openstack_authorization\\Services\\TokenService.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAswC8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T12:58:46.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T12:58:46.973Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "acl_openstack_authorization\\Repositories\\TokenRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T12:53:11.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T12:53:11.522Z"
             },
             {
               "$type": "Document",
@@ -95,7 +92,7 @@
               "RelativeDocumentMoniker": "acl_openstack_authorization\\appsettings.Development.json",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.Development.json",
               "RelativeToolTip": "acl_openstack_authorization\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-27T12:43:27.223Z",
               "EditorCaption": ""
@@ -108,7 +105,7 @@
               "RelativeDocumentMoniker": "acl_openstack_authorization\\appsettings.json",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_authorization\\acl_openstack_authorization\\appsettings.json",
               "RelativeToolTip": "acl_openstack_authorization\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-27T12:40:26.541Z",
               "EditorCaption": ""
@@ -123,8 +120,7 @@
               "RelativeToolTip": "acl_openstack_authorization\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T12:40:19.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T12:40:19.787Z"
             },
             {
               "$type": "Document",
@@ -136,8 +132,7 @@
               "RelativeToolTip": "acl_openstack_authorization\\Dockerfile",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-27T12:35:24.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T12:35:24.961Z"
             }
           ]
         }

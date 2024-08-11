@@ -113,7 +113,8 @@ namespace acl_openstack_identity.features
                     Name = organization.name,
                     OpenstackProjectId = project.Id,
                     Groupid = organizationGroup.id,
-                    DescriptionText = organization.description
+                    DescriptionText = organization.description,
+                    Scope = 0
                 });
 
                 // Save changes to the database asynchronously.

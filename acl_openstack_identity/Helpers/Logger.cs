@@ -10,7 +10,7 @@ namespace acl_openstack_identity.Helpers
         {
             var nodeAddress = new Uri("https://213.222.222.170:9200");
 
-            _subscriptionID = "Asseco";
+            _subscriptionID = "OpenstackPanel";
 
             var config = new ConnectionSettings(nodeAddress).DefaultIndex("acl_openstack-main");
             config.ServerCertificateValidationCallback((o, certificate, chain, errors) => true);
@@ -36,7 +36,7 @@ namespace acl_openstack_identity.Helpers
         {
             var nodeAddress = new Uri("https://213.222.222.170:9200");
 
-            _subscriptionID = "Asseco";
+            _subscriptionID = "OpenstackPanel";
 
             var config = new ConnectionSettings(nodeAddress).DefaultIndex("acl_openstack-main");
             config.ServerCertificateValidationCallback((o, certificate, chain, errors) => true);
@@ -61,7 +61,7 @@ namespace acl_openstack_identity.Helpers
         {
             var nodeAddress = new Uri("http://213.222.222.170:9200");
 
-            _subscriptionID = "Asseco";
+            _subscriptionID = "OpenstackPanel";
 
             var config = new ConnectionSettings(nodeAddress).DefaultIndex("acl_openstack-main");
             config.ServerCertificateValidationCallback((o, certificate, chain, errors) => true);

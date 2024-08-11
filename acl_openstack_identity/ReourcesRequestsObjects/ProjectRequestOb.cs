@@ -33,7 +33,7 @@ namespace acl_openstack_identity.ReourcesRequestsObjects
     public class ProjectEditRequestOb
     {
         [JsonPropertyName("id")]
-        public int? id { get; set; }
+        public string? id { get; set; }
 
         [JsonPropertyName("name")]
         public string? name { get; set; }

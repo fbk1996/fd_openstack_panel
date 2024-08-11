@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\conns\\connections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\conns\\connections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\features\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\features\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\organizations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\features\\organizations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\reourcesrequestsobjects\\projectrequestob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\reourcesrequestsobjects\\projectrequestob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\resourcetypes\\projecttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\resourcetypes\\projecttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\resources\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\resources\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\helpers\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\helpers\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\conns\\connections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\conns\\connections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -29,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\helpers\\generators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\helpers\\generators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\helpers\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\helpers\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\organizations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\features\\organizations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\controllers\\organizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,20 +103,8 @@
       "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\resources\\inheritrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\resources\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\resources\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\resources\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\resources\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\resourcetypes\\projecttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\resourcetypes\\projecttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\reourcesrequestsobjects\\projectrequestob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|solutionrelative:acl_openstack_identity\\reourcesrequestsobjects\\projectrequestob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787F3596-5A83-47EB-9C6F-0006D4EB92C6}|acl_openstack_identity\\acl_openstack_identity.csproj|c:\\visual projects\\asseco\\openstack\\acl_openstack_identity\\acl_openstack_identity\\resources\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,19 +130,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "projects.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\projects.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\features\\projects.cs",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\projects.cs",
               "RelativeToolTip": "acl_openstack_identity\\features\\projects.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAkAAAA",
+              "ViewState": "AQIAAFQBAAAAAAAAAAAUwHEBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T18:09:01.58Z"
+              "WhenOpened": "2024-08-11T18:09:01.58Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Sender.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Helpers\\Sender.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Helpers\\Sender.cs",
@@ -154,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "appData.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Settings\\appData.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Settings\\appData.cs",
@@ -166,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "EmailTemplates.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Helpers\\EmailTemplates.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Helpers\\EmailTemplates.cs",
@@ -178,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "connections.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Conns\\connections.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Conns\\connections.cs",
@@ -191,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "UserRequest.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\ReourcesRequestsObjects\\UserRequest.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\ReourcesRequestsObjects\\UserRequest.cs",
@@ -203,19 +204,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "users.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\users.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\features\\users.cs",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\users.cs",
               "RelativeToolTip": "acl_openstack_identity\\features\\users.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAWAAAA",
+              "ViewState": "AQIAAMIBAAAAAAAAAAAAAM0BAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T19:24:05.854Z"
+              "WhenOpened": "2024-08-05T19:24:05.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "scopeSelector.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Helpers\\scopeSelector.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Helpers\\scopeSelector.cs",
@@ -227,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "roles.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\roles.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\features\\roles.cs",
@@ -239,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "rolesLibrary.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\libraries\\rolesLibrary.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\libraries\\rolesLibrary.cs",
@@ -251,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "OpenstackClient.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Resources\\OpenstackClient.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Resources\\OpenstackClient.cs",
@@ -263,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "UserTypes.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\ResourceTypes\\UserTypes.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\ResourceTypes\\UserTypes.cs",
@@ -275,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Resources\\User.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Resources\\User.cs",
@@ -287,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "OrganizationController.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Controllers\\OrganizationController.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Controllers\\OrganizationController.cs",
@@ -299,31 +301,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "organizations.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\organizations.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\features\\organizations.cs",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\organizations.cs",
               "RelativeToolTip": "acl_openstack_identity\\features\\organizations.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAmwD4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T20:04:11.515Z"
+              "WhenOpened": "2024-07-27T20:04:11.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Logger.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Helpers\\Logger.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Helpers\\Logger.cs",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Helpers\\Logger.cs",
               "RelativeToolTip": "acl_openstack_identity\\Helpers\\Logger.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAFEAAABaAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T15:19:01.709Z"
+              "WhenOpened": "2024-07-27T15:19:01.709Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "generators.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Helpers\\generators.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Helpers\\generators.cs",
@@ -335,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Program.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Program.cs",
@@ -347,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\appsettings.Development.json",
               "RelativeDocumentMoniker": "acl_openstack_identity\\appsettings.Development.json",
@@ -359,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\appsettings.json",
               "RelativeDocumentMoniker": "acl_openstack_identity\\appsettings.json",
@@ -388,11 +392,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 4,
               "Title": "ProjectTypes.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\ResourceTypes\\ProjectTypes.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\ResourceTypes\\ProjectTypes.cs",
@@ -400,31 +404,34 @@
               "RelativeToolTip": "acl_openstack_identity\\ResourceTypes\\ProjectTypes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T22:57:08.75Z"
+              "WhenOpened": "2024-07-27T22:57:08.75Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 3,
               "Title": "ProjectRequestOb.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\ReourcesRequestsObjects\\ProjectRequestOb.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\ReourcesRequestsObjects\\ProjectRequestOb.cs",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\ReourcesRequestsObjects\\ProjectRequestOb.cs",
               "RelativeToolTip": "acl_openstack_identity\\ReourcesRequestsObjects\\ProjectRequestOb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T22:59:52.783Z"
+              "WhenOpened": "2024-07-27T22:59:52.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 5,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Resources\\Project.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Resources\\Project.cs",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Resources\\Project.cs",
               "RelativeToolTip": "acl_openstack_identity\\Resources\\Project.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAI4AAABNAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAI4AAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T22:49:32.757Z"
+              "WhenOpened": "2024-07-27T22:49:32.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -440,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Resources\\Role.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Resources\\Role.cs",
@@ -453,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "inheritRole.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Resources\\inheritRole.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Resources\\inheritRole.cs",
@@ -465,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Group.cs",
               "DocumentMoniker": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\Resources\\Group.cs",
               "RelativeDocumentMoniker": "acl_openstack_identity\\Resources\\Group.cs",

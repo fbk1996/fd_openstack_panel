@@ -2,9 +2,9 @@
 {
     public class connections
     {
-        public static string smtpHost = "mail.mechapp.cloud";
+        public static string smtpHost = "smtphost";
         public static int smtpPort = 587;
-        public static string smtpUser = "powiadomienia@mechapp.cloud";
-        public static string smtpPassword = "Entropia13!";
+        public static string smtpUser = "smptuser";
+        public static string smtpPassword = "smptpassword";
     }
 }

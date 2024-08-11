@@ -10,9 +10,9 @@ namespace acl_openstack_identity.features
 {
     public class roles
     {
-        private readonly assecoOpenstackContext _context;
+        private readonly OpenstackContext _context;
 
-        public roles (assecoOpenstackContext context)
+        public roles (OpenstackContext context)
         {
             _context = context;
         }

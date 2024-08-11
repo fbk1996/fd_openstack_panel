@@ -5,13 +5,13 @@ using acl_openstack_identity.Models;
 
 namespace acl_openstack_identity.Data;
 
-public partial class assecoOpenstackContext : DbContext
+public partial class OpenstackContext : DbContext
 {
-    public assecoOpenstackContext()
+    public OpenstackContext()
     {
     }
 
-    public assecoOpenstackContext(DbContextOptions<assecoOpenstackContext> options)
+    public OpenstackContext(DbContextOptions<OpenstackContext> options)
         : base(options)
     {
     }

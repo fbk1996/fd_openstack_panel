@@ -13,9 +13,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<assecoOpenstackContext>(options =>
+builder.Services.AddDbContext<OpenstackContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("AssecoOpenstackDatabase"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("OpenstackDatabase"));
 });
 
 builder.Services.AddHttpClient();

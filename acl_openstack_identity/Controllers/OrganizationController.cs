@@ -10,11 +10,11 @@ namespace acl_openstack_identity.Controllers
     [ApiController]
     public class OrganizationController : ControllerBase
     {
-        private assecoOpenstackContext _context;
+        private OpenstackContext _context;
         private organizations organizationsController;
         private readonly IConfiguration _configuration;
 
-        public OrganizationController(assecoOpenstackContext context, IConfiguration configuration, HttpClient httpClient)
+        public OrganizationController(OpenstackContext context, IConfiguration configuration, HttpClient httpClient)
         {
             _context = context;
             organizationsController = new organizations(configuration, context, httpClient);

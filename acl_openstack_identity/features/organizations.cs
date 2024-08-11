@@ -8,12 +8,12 @@ namespace acl_openstack_identity.features
     public class organizations
     {
         private readonly IConfiguration _configuration;
-        private assecoOpenstackContext _context;
+        private OpenstackContext _context;
         private OpenstackClient _client;
         private readonly HttpClient _httpClient;
         private roles _roles;
 
-        public organizations (IConfiguration configuration, assecoOpenstackContext context, HttpClient httpClient)
+        public organizations (IConfiguration configuration, OpenstackContext context, HttpClient httpClient)
         {
             _configuration = configuration;
             _context = context;

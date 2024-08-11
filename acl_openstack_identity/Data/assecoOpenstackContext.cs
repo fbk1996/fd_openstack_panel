@@ -16,10 +16,6 @@ public partial class assecoOpenstackContext : DbContext
     {
     }
 
-    public virtual DbSet<Organisation> Organisations { get; set; }
-
-    public virtual DbSet<OrganizationsUser> OrganizationsUsers { get; set; }
-
     public virtual DbSet<Project> Projects { get; set; }
 
     public virtual DbSet<ProjectsUser> ProjectsUsers { get; set; }
@@ -30,54 +26,13 @@ public partial class assecoOpenstackContext : DbContext
 
     public virtual DbSet<UsersRole> UsersRoles { get; set; }
 
+    public virtual DbSet<UsersToken> UsersTokens { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseNpgsql("Name=ConnectionStrings:AssecoOpenstackDatabase");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Organisation>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("organisations_pkey");
-
-            entity.ToTable("organisations");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.GroupId)
-                .HasMaxLength(40)
-                .HasColumnName("group_id");
-            entity.Property(e => e.Name)
-                .HasMaxLength(150)
-                .HasColumnName("name");
-            entity.Property(e => e.OpenstackProjectId)
-                .HasMaxLength(36)
-                .HasColumnName("openstack_project_id");
-        });
-
-        modelBuilder.Entity<OrganizationsUser>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("organizations_users_pkey");
-
-            entity.ToTable("organizations_users");
-
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.OrganizationId)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("organization_id");
-            entity.Property(e => e.UserId)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("user_id");
-
-            entity.HasOne(d => d.Organization).WithMany(p => p.OrganizationsUsers)
-                .HasForeignKey(d => d.OrganizationId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("organizations_users_organisations_id_fk");
-
-            entity.HasOne(d => d.User).WithMany(p => p.OrganizationsUsers)
-                .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("organizations_users_users_id_fk");
-        });
-
         modelBuilder.Entity<Project>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("projects_pk");
@@ -90,6 +45,9 @@ public partial class assecoOpenstackContext : DbContext
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("creation_date");
             entity.Property(e => e.DescriptionText).HasColumnName("description_text");
+            entity.Property(e => e.Groupid)
+                .HasMaxLength(40)
+                .HasColumnName("groupid");
             entity.Property(e => e.Metadata)
                 .HasColumnType("jsonb")
                 .HasColumnName("metadata");
@@ -99,20 +57,13 @@ public partial class assecoOpenstackContext : DbContext
             entity.Property(e => e.OpenstackProjectId)
                 .HasMaxLength(36)
                 .HasColumnName("openstack_project_id");
-            entity.Property(e => e.OrganisationId)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("organisation_id");
             entity.Property(e => e.ParentId)
                 .ValueGeneratedOnAdd()
                 .HasColumnName("parent_id");
+            entity.Property(e => e.Scope).HasColumnName("scope");
             entity.Property(e => e.Status)
                 .HasMaxLength(50)
                 .HasColumnName("status");
-
-            entity.HasOne(d => d.Organisation).WithMany(p => p.Projects)
-                .HasForeignKey(d => d.OrganisationId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("projects_organisations_id_fk");
 
             entity.HasOne(d => d.Parent).WithMany(p => p.InverseParent)
                 .HasForeignKey(d => d.ParentId)
@@ -155,17 +106,9 @@ public partial class assecoOpenstackContext : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(60)
                 .HasColumnName("name");
-            entity.Property(e => e.OrganisationId)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("organisation_id");
             entity.Property(e => e.Permissions).HasColumnName("permissions");
             entity.Property(e => e.ProjectId).HasColumnName("project_id");
             entity.Property(e => e.Scope).HasColumnName("scope");
-
-            entity.HasOne(d => d.Organisation).WithMany(p => p.Roles)
-                .HasForeignKey(d => d.OrganisationId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("roles_organisations_id_fk");
 
             entity.HasOne(d => d.Project).WithMany(p => p.Roles)
                 .HasForeignKey(d => d.ProjectId)
@@ -183,21 +126,18 @@ public partial class assecoOpenstackContext : DbContext
                 .HasMaxLength(100)
                 .HasColumnName("email");
             entity.Property(e => e.Icon).HasColumnName("icon");
-            entity.Property(e => e.Is2fa)
-                .HasDefaultValueSql("false")
-                .HasColumnName("is2fa");
             entity.Property(e => e.Isfirstlogin)
                 .HasDefaultValueSql("false")
                 .HasColumnName("isfirstlogin");
             entity.Property(e => e.Lastname)
                 .HasMaxLength(25)
                 .HasColumnName("lastname");
-            entity.Property(e => e.Login)
-                .HasMaxLength(50)
-                .HasColumnName("login");
             entity.Property(e => e.Name)
                 .HasMaxLength(25)
                 .HasColumnName("name");
+            entity.Property(e => e.OpenstackId)
+                .HasMaxLength(40)
+                .HasColumnName("openstack_id");
             entity.Property(e => e.Openstackpassword).HasColumnName("openstackpassword");
             entity.Property(e => e.Password)
                 .HasMaxLength(255)
@@ -205,9 +145,6 @@ public partial class assecoOpenstackContext : DbContext
             entity.Property(e => e.Phone)
                 .HasMaxLength(20)
                 .HasColumnName("phone");
-            entity.Property(e => e._2faToken)
-                .HasMaxLength(150)
-                .HasColumnName("2FaToken");
         });
 
         modelBuilder.Entity<UsersRole>(entity =>
@@ -233,6 +170,29 @@ public partial class assecoOpenstackContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("users_roles_users_id_fk");
+        });
+
+        modelBuilder.Entity<UsersToken>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("users_tokens_pk");
+
+            entity.ToTable("users_tokens");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Expire)
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("expire");
+            entity.Property(e => e.Token)
+                .HasMaxLength(25)
+                .HasColumnName("token");
+            entity.Property(e => e.UserId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("user_id");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UsersTokens)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("users_tokens_users_id_fk");
         });
 
         OnModelCreatingPartial(modelBuilder);

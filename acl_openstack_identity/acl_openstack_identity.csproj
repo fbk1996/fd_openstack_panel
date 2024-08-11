@@ -32,7 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Conns\" />
+    <Folder Include="Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

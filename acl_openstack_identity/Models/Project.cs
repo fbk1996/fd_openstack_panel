@@ -13,7 +13,7 @@ public partial class Project
 
     public string OpenstackProjectId { get; set; } = null!;
 
-    public int? DescriptionText { get; set; }
+    public string? DescriptionText { get; set; }
 
     public DateTime? CreationDate { get; set; }
 
@@ -21,11 +21,11 @@ public partial class Project
 
     public string? Metadata { get; set; }
 
-    public long OrganisationId { get; set; }
+    public string? Groupid { get; set; }
+
+    public int? Scope { get; set; }
 
     public virtual ICollection<Project> InverseParent { get; set; } = new List<Project>();
-
-    public virtual Organisation Organisation { get; set; } = null!;
 
     public virtual Project Parent { get; set; } = null!;
 

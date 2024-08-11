@@ -15,10 +15,6 @@ public partial class Role
 
     public long? ProjectId { get; set; }
 
-    public long OrganisationId { get; set; }
-
-    public virtual Organisation Organisation { get; set; } = null!;
-
     public virtual Project? Project { get; set; }
 
     public virtual ICollection<UsersRole> UsersRoles { get; set; } = new List<UsersRole>();

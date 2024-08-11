@@ -1,0 +1,6 @@
+﻿################################################################################
+# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
+################################################################################
+
+/acl_openstack_identity/appsettings.json
+/acl_openstack_identity/appsettings.Development.json

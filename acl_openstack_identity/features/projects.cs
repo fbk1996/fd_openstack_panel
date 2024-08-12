@@ -49,10 +49,12 @@ namespace acl_openstack_identity.features
                         parentProject = (p.ParentId != null) ? new projectLinksDetailOb
                         {
                             id = (int)p.Parent.Id,
-                            name = p.Parent.Name
+                            name = p.Parent.Name,
+                            scope = scopeSelector.GetScopeString((int)p.Parent.Scope)
                         } : null,
                         name = p.Name,
-                        openstackId = p.OpenstackProjectId
+                        openstackId = p.OpenstackProjectId,
+                        description = p.DescriptionText
                     })
                     .FirstOrDefault();
 
@@ -471,7 +473,7 @@ namespace acl_openstack_identity.features
 
                 // If the user creation fails, return "error".
                 if (userResult.result != "user_created")
-                    return "error";
+                    return userResult.result;
 
                 // If the user creation is successful, associate the user with the specified project.
                 _context.ProjectsUsers.Add(new Models.ProjectsUser
@@ -614,12 +616,14 @@ namespace acl_openstack_identity.features
         public projectLinksDetailOb? parentProject { get; set; }
         public string? name { get; set; }
         public string? openstackId { get; set; }
+        public string? description { get; set; }
     }
 
     public class projectLinksDetailOb
     {
         public int? id { get; set; }
         public string? name { get; set; }
+        public string? scope { get; set; }
     }
 
     public class projectLinksOb

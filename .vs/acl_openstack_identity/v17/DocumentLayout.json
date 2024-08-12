@@ -136,7 +136,7 @@
               "RelativeDocumentMoniker": "acl_openstack_identity\\features\\projects.cs",
               "ToolTip": "C:\\visual projects\\Asseco\\Openstack\\acl_openstack_identity\\acl_openstack_identity\\features\\projects.cs",
               "RelativeToolTip": "acl_openstack_identity\\features\\projects.cs",
-              "ViewState": "AQIAAFQBAAAAAAAAAAAUwHEBAAAJAAAA",
+              "ViewState": "AQIAAE0CAAAAAAAAAAAUwF8CAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-11T18:09:01.58Z",
               "EditorCaption": ""
@@ -187,8 +187,7 @@
               "RelativeToolTip": "acl_openstack_identity\\Conns\\connections.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T21:12:09.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T21:12:09.225Z"
             },
             {
               "$type": "Document",
@@ -212,8 +211,7 @@
               "RelativeToolTip": "acl_openstack_identity\\features\\users.cs",
               "ViewState": "AQIAAMIBAAAAAAAAAAAAAM0BAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T19:24:05.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T19:24:05.854Z"
             },
             {
               "$type": "Document",
@@ -309,8 +307,7 @@
               "RelativeToolTip": "acl_openstack_identity\\features\\organizations.cs",
               "ViewState": "AQIAAFkAAAAAAAAAAAAmwD4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T20:04:11.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T20:04:11.515Z"
             },
             {
               "$type": "Document",
@@ -322,8 +319,7 @@
               "RelativeToolTip": "acl_openstack_identity\\Helpers\\Logger.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAAAAwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T15:19:01.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T15:19:01.709Z"
             },
             {
               "$type": "Document",
@@ -404,8 +400,7 @@
               "RelativeToolTip": "acl_openstack_identity\\ResourceTypes\\ProjectTypes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T22:57:08.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T22:57:08.75Z"
             },
             {
               "$type": "Document",
@@ -430,8 +425,7 @@
               "RelativeToolTip": "acl_openstack_identity\\Resources\\Project.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAAAI4AAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T22:49:32.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T22:49:32.757Z"
             },
             {
               "$type": "Document",
@@ -455,8 +449,7 @@
               "RelativeToolTip": "acl_openstack_identity\\Resources\\Role.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T20:49:55.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-29T20:49:55.61Z"
             },
             {
               "$type": "Document",

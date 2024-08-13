@@ -1214,6 +1214,7 @@ namespace acl_openstack_identity.features
                     _context.UsersRoles.RemoveRange(_context.UsersRoles.Where(ur => ur.UserId == user.Id));
                     _context.ProjectsUsers.RemoveRange(_context.ProjectsUsers.Where(up => up.UserId == user.Id));
                     _context.UsersTokens.RemoveRange(_context.UsersTokens.Where(ut => ut.UserId == user.Id));
+                    _context.ApplicationCredentials.RemoveRange(_context.ApplicationCredentials.Where(ap => ap.UserId == user.Id));
                     _context.Users.Remove(user);
 
                     await _context.SaveChangesAsync();
@@ -1425,6 +1426,7 @@ namespace acl_openstack_identity.features
                         _context.UsersRoles.RemoveRange(_context.UsersRoles.Where(ur => ur.UserId == user.Id));
                         _context.ProjectsUsers.RemoveRange(_context.ProjectsUsers.Where(up => up.UserId == user.Id));
                         _context.UsersTokens.RemoveRange(_context.UsersTokens.Where(ut => ut.UserId == user.Id));
+                        _context.ApplicationCredentials.RemoveRange(_context.ApplicationCredentials.Where(ap => ap.UserId == user.Id));
                         _context.Users.Remove(user);
 
                         await _context.SaveChangesAsync();

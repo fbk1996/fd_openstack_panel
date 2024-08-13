@@ -16,6 +16,8 @@ public partial class OpenstackContext : DbContext
     {
     }
 
+    public virtual DbSet<ApplicationCredential> ApplicationCredentials { get; set; }
+
     public virtual DbSet<Project> Projects { get; set; }
 
     public virtual DbSet<ProjectsUser> ProjectsUsers { get; set; }
@@ -29,10 +31,36 @@ public partial class OpenstackContext : DbContext
     public virtual DbSet<UsersToken> UsersTokens { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Name=ConnectionStrings:AssecoOpenstackDatabase");
+        => optionsBuilder.UseNpgsql("Name=ConnectionStrings:OpenstackDatabase");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<ApplicationCredential>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("application_credentials_pk");
+
+            entity.ToTable("application_credentials");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Expire)
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("expire");
+            entity.Property(e => e.Name)
+                .HasMaxLength(50)
+                .HasColumnName("name");
+            entity.Property(e => e.Secret)
+                .HasMaxLength(80)
+                .HasColumnName("secret");
+            entity.Property(e => e.UserId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("user_id");
+
+            entity.HasOne(d => d.User).WithMany(p => p.ApplicationCredentials)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("application_credentials_users_id_fk");
+        });
+
         modelBuilder.Entity<Project>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("projects_pk");
@@ -139,9 +167,6 @@ public partial class OpenstackContext : DbContext
                 .HasMaxLength(40)
                 .HasColumnName("openstack_id");
             entity.Property(e => e.Openstackpassword).HasColumnName("openstackpassword");
-            entity.Property(e => e.Password)
-                .HasMaxLength(255)
-                .HasColumnName("password");
             entity.Property(e => e.Phone)
                 .HasMaxLength(20)
                 .HasColumnName("phone");

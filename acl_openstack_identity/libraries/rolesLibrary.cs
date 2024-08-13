@@ -5506,5 +5506,108 @@
 
             return null;
         }
+
+        public static Object GetSidebarConstruct(string scope)
+        {
+            if (scope == "Organization")
+            {
+                return new
+                {
+                    org_roles = false,
+                    org_hierarchy = false,
+                    org_users = false,
+                    org_quotas = false,
+                    org_applicationCredentials = false
+                };
+            }
+            else if (scope == "folder")
+            {
+                return new
+                {
+                    org_roles = false,
+                    org_hierarchy = false,
+                    org_users = false,
+                    org_quotas = false,
+                    org_applicationCredentails = false
+                }; 
+            }
+            else
+            {
+                return new
+                {
+                    org_roles = false,
+                    org_users = false,
+                    org_quotas = false,
+                    org_applicationCredentials = false,
+                    compute_vm = false,
+                    compute_flavors = false,
+                    compute_keyPairs = false,
+                    compute_serverGroups = false,
+                    blockStorage_volumeTypes = false,
+                    blockStorage_volumes = false,
+                    blockStorage_snapshots = false,
+                    blockStorage_snapshotGroups = false,
+                    blockStorage_backup = false,
+                    blockStorage_volumeGroups = false,
+                    blockStorage_groupTypes = false,
+                    dns_zone = false,
+                    dns_zoneImport = false,
+                    dns_zoneExport = false,
+                    dns_sharedZones = false,
+                    dns_ownerShipTransfers = false,
+                    dns_recordSets = false,
+                    dns_tld = false,
+                    dns_tsigkey = false,
+                    image_images = false,
+                    image_sharing = false,
+                    secrets_secrets = false,
+                    loadBalancers_loadBalancers = false,
+                    loadBalancers_availabilityZones = false,
+                    loadBalancers_availabilityZonesProfile = false,
+                    clusters_clusters = false,
+                    clusters_clusterTemplates = false,
+                    network_networks = false,
+                    network_ports = false,
+                    network_trunks = false,
+                    network_addressScopes = false,
+                    network_routersConntrackHelper = false,
+                    network_floatingIps = false,
+                    network_floatingIpPools = false,
+                    network_portForwarding = false,
+                    network_routers = false,
+                    network_subnetPools = false,
+                    network_subnets = false,
+                    network_localIps = false,
+                    network_addressGroups = false,
+                    network_firewall = false,
+                    network_securityGroups = false,
+                    network_vpn = false,
+                    objectStore_containers = false,
+                    orchestration_stacks = false,
+                    orchestration_events = false,
+                    orchestration_templates = false,
+                    orchestration_softwareConfiguration = false,
+                    orchestration_resourceType = false,
+                    monitoring_dashboards = false,
+                    monitoring_alerts = false,
+                    workflow_workbook = false,
+                    workglow_workflow = false,
+                    workflow_actions = false,
+                    workflow_executions = false,
+                    workflow_tasks = false,
+                    workflow_actionExecutions = false,
+                    workflow_cronTriggers = false,
+                    workflow_environments = false,
+                    workflow_services = false,
+                    rating_collectorMappings = false,
+                    rating_infoMetrics = false,
+                    rating_rating = false,
+                    rating_report = false,
+                    rating_storage = false,
+                    database_databases = false,
+                    database_backups = false
+                }; 
+            }
+        }
     }
 }

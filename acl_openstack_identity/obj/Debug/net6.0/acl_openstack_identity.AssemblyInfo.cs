@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("acl_openstack_identity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a3b75d2705c78e11a6d7c16ab50243afeb0dabc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+308be59e57be261eddecf72e50bb7221a873cdad")]
 [assembly: System.Reflection.AssemblyProductAttribute("acl_openstack_identity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("acl_openstack_identity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

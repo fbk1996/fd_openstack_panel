@@ -15,8 +15,6 @@ public partial class User
 
     public string? Phone { get; set; }
 
-    public string? Password { get; set; }
-
     public string? Icon { get; set; }
 
     public bool? Isfirstlogin { get; set; }
@@ -24,6 +22,8 @@ public partial class User
     public string? Openstackpassword { get; set; }
 
     public string? OpenstackId { get; set; }
+
+    public virtual ICollection<ApplicationCredential> ApplicationCredentials { get; set; } = new List<ApplicationCredential>();
 
     public virtual ICollection<ProjectsUser> ProjectsUsers { get; set; } = new List<ProjectsUser>();
 

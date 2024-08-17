@@ -5,6 +5,7 @@ using Npgsql;
 using System.Text;
 using System.Text.Json;
 using acl_openstack_identity.Resources;
+using Newtonsoft.Json.Linq;
 
 namespace acl_openstack_identity.features
 {
@@ -395,7 +396,7 @@ namespace acl_openstack_identity.features
                     // Function to obtain Keycloak access token.
                     async Task<string> getKeycloakAccessToken()
                     {
-                        var tokenEndpoint = $"https://auth.mechapp.cloud/auth/realms/master/protocol/openid-connect/token";
+                        var tokenEndpoint = $"{_configuration["KeyCloak:Url"]}/realms/master/protocol/openid-connect/token";
 
                         var requestBody = new Dictionary<string, string>
                 {
@@ -413,9 +414,9 @@ namespace acl_openstack_identity.features
                             return "error";
 
                         var responseContent = await response.Content.ReadAsStringAsync();
-                        var tokenData = JsonSerializer.Deserialize<Dictionary<string, string>>(responseContent);
+                        var tokenData = JObject.Parse(responseContent);
 
-                        return tokenData["access_token"];
+                        return tokenData["access_token"].ToString();
                     }
 
                     // Get Keycloak access token.
@@ -427,7 +428,7 @@ namespace acl_openstack_identity.features
                     // Function to create a new user in Keycloak.
                     async Task<string> keycloakCreateUser()
                     {
-                        var createUserEndpoint = "https://auth.mechapp.cloud/auth/admin/realms/acl_openstack/users";
+                        var createUserEndpoint = $"{_configuration["KeyCloak:Url"]}/admin/realms/acl_openstack/users";
 
                         var userKeyCloak = new
                         {
@@ -727,7 +728,7 @@ namespace acl_openstack_identity.features
                 // Function to obtain Keycloak access token.
                 async Task<string> getKeycloakAccessToken()
                 {
-                    var tokenEndpoint = $"https://auth.mechapp.cloud/auth/realms/master/protocol/openid-connect/token";
+                    var tokenEndpoint = $"{_configuration["KeyCloak:Url"]}/realms/master/protocol/openid-connect/token";
 
                     var requestBody = new Dictionary<string, string>
             {
@@ -745,9 +746,9 @@ namespace acl_openstack_identity.features
                         return "error";
 
                     var responseContent = await response.Content.ReadAsStringAsync();
-                    var tokenData = JsonSerializer.Deserialize<Dictionary<string, string>>(responseContent);
+                    var tokenData = JObject.Parse(responseContent);
 
-                    return tokenData["access_token"];
+                    return tokenData["access_token"].ToString();
                 }
 
                 // Get Keycloak access token.
@@ -759,7 +760,7 @@ namespace acl_openstack_identity.features
                 // Function to retrieve the user's ID from Keycloak using their old email.
                 async Task<string> GetUserId(string token)
                 {
-                    var usersEndpoint = $"https://auth.mechapp.cloud/auth/admin/realms/acl_openstack/users?email=${user.oldEmail}";
+                    var usersEndpoint = $"{_configuration["KeyCloak:Url"]}/admin/realms/acl_openstack/users?email=${user.oldEmail}";
 
                     if (_httpClient.DefaultRequestHeaders.Authorization != null)
                         _httpClient.DefaultRequestHeaders.Clear();
@@ -790,7 +791,7 @@ namespace acl_openstack_identity.features
                 // Function to update the user details in Keycloak.
                 async Task<string> UpdateKeycloakUser(string token)
                 {
-                    var updateUserEndpoint = $"https://auth.mechapp.cloud/admin/realms/acl_openstack/users/{keycloakUser}";
+                    var updateUserEndpoint = $"{_configuration["KeyCloak:Url"]}/admin/realms/acl_openstack/users/{keycloakUser}";
 
                     var updatedUser = new
                     {

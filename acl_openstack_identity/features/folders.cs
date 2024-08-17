@@ -643,7 +643,7 @@ namespace acl_openstack_identity.features
                 var client = new OpenstackClient(
                     _configuration["OpenStack:AuthUrl"],
                     user.Email,
-                    user.Password,
+                    user.Openstackpassword,
                     _configuration["OpenStack:Domain"],
                     folder.OpenstackProjectId
                 );

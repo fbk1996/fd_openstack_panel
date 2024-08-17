@@ -21,7 +21,7 @@
                                     { "linksEdit", false }
                                 }
                             },
-                            { "Hierarchy", new Dictionary<string, bool>
+                            { "hierarchy", new Dictionary<string, bool>
                                 {
                                     { "view", false },
                                     { "list", false }
@@ -949,7 +949,7 @@
                                     { "linksEdit", false }
                                 }
                             },
-                            { "Hierarchy", new Dictionary<string, bool>
+                            { "hierarchy", new Dictionary<string, bool>
                                 {
                                     { "view", false },
                                     { "list", false }
@@ -2775,7 +2775,7 @@
                                     { "linksEdit", true }
                                 }
                             },
-                            { "Hierarchy", new Dictionary<string, bool>
+                            { "hierarchy", new Dictionary<string, bool>
                                 {
                                     { "view", true },
                                     { "list", true }
@@ -3702,7 +3702,7 @@
                                     { "linksEdit", true }
                                 }
                             },
-                            { "Hierarchy", new Dictionary<string, bool>
+                            { "hierarchy", new Dictionary<string, bool>
                                 {
                                     { "view", true },
                                     { "list", true }
@@ -5513,33 +5513,33 @@
             {
                 return new
                 {
-                    org_roles = false,
-                    org_hierarchy = false,
-                    org_users = false,
-                    org_quotas = false,
-                    org_applicationCredentials = false
+                    organization_roles = false,
+                    organization_hierarchy = false,
+                    organization_users = false,
+                    organization_quotas = false,
+                    organization_applicationCredentials = false
                 };
             }
             else if (scope == "folder")
             {
                 return new
                 {
-                    org_roles = false,
-                    org_hierarchy = false,
-                    org_users = false,
-                    org_quotas = false,
-                    org_applicationCredentails = false
+                    organization_roles = false,
+                    organization_hierarchy = false,
+                    organization_users = false,
+                    organization_quotas = false,
+                    organization_applicationCredentails = false
                 }; 
             }
             else
             {
                 return new
                 {
-                    org_roles = false,
-                    org_users = false,
-                    org_quotas = false,
-                    org_applicationCredentials = false,
-                    compute_vm = false,
+                    organization_roles = false,
+                    organization_users = false,
+                    organization_quotas = false,
+                    organization_applicationCredentials = false,
+                    compute_virtualMachines = false,
                     compute_flavors = false,
                     compute_keyPairs = false,
                     compute_serverGroups = false,
@@ -5554,7 +5554,7 @@
                     dns_zoneImport = false,
                     dns_zoneExport = false,
                     dns_sharedZones = false,
-                    dns_ownerShipTransfers = false,
+                    dns_ownershipTransfer = false,
                     dns_recordSets = false,
                     dns_tld = false,
                     dns_tsigkey = false,
@@ -5566,22 +5566,22 @@
                     loadBalancers_availabilityZonesProfile = false,
                     clusters_clusters = false,
                     clusters_clusterTemplates = false,
-                    network_networks = false,
-                    network_ports = false,
-                    network_trunks = false,
-                    network_addressScopes = false,
-                    network_routersConntrackHelper = false,
-                    network_floatingIps = false,
-                    network_floatingIpPools = false,
-                    network_portForwarding = false,
-                    network_routers = false,
-                    network_subnetPools = false,
-                    network_subnets = false,
-                    network_localIps = false,
-                    network_addressGroups = false,
-                    network_firewall = false,
-                    network_securityGroups = false,
-                    network_vpn = false,
+                    networking_networks = false,
+                    networking_ports = false,
+                    networking_trunks = false,
+                    networking_addressScopes = false,
+                    networking_routersConntrackHelper = false,
+                    networking_floatingIps = false,
+                    networking_floatingIpPools = false,
+                    networking_portForwarding = false,
+                    networking_routers = false,
+                    networking_subnetPool = false,
+                    networking_subnets = false,
+                    networking_localIps = false,
+                    networking_addressGroups = false,
+                    networking_firewallGroups = false,
+                    networking_securityGroups = false,
+                    networking_vpnService = false,
                     objectStore_containers = false,
                     orchestration_stacks = false,
                     orchestration_events = false,
@@ -5589,7 +5589,7 @@
                     orchestration_softwareConfiguration = false,
                     orchestration_resourceType = false,
                     monitoring_dashboards = false,
-                    monitoring_alerts = false,
+                    alarming_alerts = false,
                     workflow_workbook = false,
                     workglow_workflow = false,
                     workflow_actions = false,

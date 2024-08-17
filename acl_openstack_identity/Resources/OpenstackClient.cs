@@ -63,7 +63,7 @@ namespace acl_openstack_identity.Resources
                 var response = await _httpClient.PostAsync($"{_authUrl}/v3/auth/tokens", content);
 
                 if (!response.IsSuccessStatusCode)
-                    return ("error", null);
+                    return ("error " + response.StatusCode + await response.Content.ReadAsStringAsync(), null);
 
                 string token = response.Headers.GetValues("X-Subject-Token").First();
 
@@ -74,19 +74,19 @@ namespace acl_openstack_identity.Resources
                 var service = serviceCatalog.FirstOrDefault(service => service["type"].ToString() == "identity");
 
                 if (service == null)
-                    return ("error", null);
+                    return ("error service ", null);
 
                 var serviceUrl = service["endpoints"].FirstOrDefault(endpoint => endpoint["interface"].ToString() == "public")?["url"].ToString();
 
                 if (serviceUrl == null)
-                    return ("error", null);
+                    return ("error serviceUrl ", null);
 
                 return (token, serviceUrl);
             }
             catch (Exception ex)
             {
                 Logger.SendNormalException("acl_openstack", "OpenstackClient", "Authenticate", ex);
-                return ("error", null);
+                return ("error " + ex, null);
             }
         }
     }

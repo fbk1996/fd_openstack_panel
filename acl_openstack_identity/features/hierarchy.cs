@@ -44,6 +44,7 @@ namespace acl_openstack_identity.features
                     id = (int)project.Id,
                     name = project.Name,
                     openstackId = project.OpenstackProjectId,
+                    scope = (int)project.Scope,
                     tree = new List<hierarchyOb>()
                 };
 
@@ -70,6 +71,7 @@ namespace acl_openstack_identity.features
                                 id = (int)child.Id,
                                 name = child.Name,
                                 openstackId = child.OpenstackProjectId,
+                                scope = (int)child.Scope,
                                 tree = null // No further children for this node.
                             });
                         }
@@ -82,6 +84,7 @@ namespace acl_openstack_identity.features
                                 id = (int)child.Id,
                                 name = child.Name,
                                 openstackId = child.OpenstackProjectId,
+                                scope = (int)child.Scope,
                                 tree = new List<hierarchyOb>() // Prepare for potential child nodes.
                             };
 
@@ -114,6 +117,7 @@ namespace acl_openstack_identity.features
         public int? id { get; set; }
         public string? name { get; set; }
         public string? openstackId { get; set; }
+        public int? scope { get; set; }
         public List<hierarchyOb>? tree { get; set; }
     }
 }

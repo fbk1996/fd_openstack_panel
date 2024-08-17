@@ -68,7 +68,7 @@ namespace acl_openstack_identity.features
 
                 // Check if project creation failed; return "error" if it did.
                 if (project.Name == "error")
-                    return new AddOrganizationObResult { result = "error" };
+                    return new AddOrganizationObResult { result = "no_project" };
 
                 // Create a new group for the organization.
                 var organizationGroup = await groupController.AddGroup(token.token, new ReourcesRequestsObjects.GroupRequest.AddGroupRequest
